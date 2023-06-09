@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Button, Card } from 'antd';
+import './App.css'; // assuming you have an App.css file for your custom styles
+import WeatherCircle from './components/WeatherCircle';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <WeatherCircle/>
+      <Button className="neumorphic">Neumorphic Button</Button>
+      <Card className="neumorphic" title="Neumorphic Card">
+        This is a card with neumorphic design.
+      </Card>
     </div>
   );
 }
