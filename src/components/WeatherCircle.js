@@ -3,6 +3,7 @@ import { CloudOutlined } from '@ant-design/icons';
 import './WeatherCircle.css'; // assuming you have a WeatherCircle.css file for your custom styles
 import '../App.css'
 import './WaveAnimation.css'; // import the wave animation CSS
+import { Cloud, CloudSnow } from 'react-bootstrap-icons';
 function WeatherCircle({ humidity }) {
   // Convert humidity level to a percentage
   const humidityPercentage = `${ humidity}%`;
@@ -14,7 +15,7 @@ function WeatherCircle({ humidity }) {
     <div className="neumorphic-inset" style={{borderRadius:"50%", margin:"2em", padding:"1em", background}}>
       <div className="neumorphic" style={{borderRadius:"50%", margin:"0em", padding:"2em"}}>
         <div className="neumorphic" style={{borderRadius:"50%", margin:"0em", padding:"2em"}}>
-          <CloudOutlined style={{ fontSize: '100px', color:"#444444"}} /> {/* Adjust size as needed */}
+          <CloudSnow size={96} color={"#444444"}/>
         </div>
       </div>
     </div>

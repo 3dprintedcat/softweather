@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Card, Col, Row, Space } from 'antd';
 import './App.css'; // assuming you have an App.css file for your custom styles
 import WeatherCircle from './components/WeatherCircle';
-import { BookOutlined, InfoCircleFilled } from '@ant-design/icons';
+import { Book, Calendar, Calendar2, Thermometer, ThermometerHalf } from 'react-bootstrap-icons';
 
 function App() {
   return (
@@ -10,13 +10,13 @@ function App() {
       <WeatherCircle humidity={30}/>
       <Space size={'large'}>
       <Col>
-      <Button className='neumorphicButton' span={6} style={{width:"5em", height: "5em"}}><InfoCircleFilled style={{fontSize:"2em", color:"#444444"}}/></Button>
+      <Button className='neumorphicButton' span={6} style={{width:"5em", height: "5em"}}><ThermometerHalf size={"2em"} color={"#444444"}/></Button>
       </Col>
       <Col>
-      <Button className='neumorphicButton' span={6} style={{width:"5em", height: "5em"}}><BookOutlined style={{fontSize:"2em", color:"#444444"}}/></Button>
+      <Button className='neumorphicButton' span={6} style={{width:"5em", height: "5em"}}><Book style={{fontSize:"2em", color:"#444444"}}/></Button>
       </Col>
       <Col>
-      <Button className='neumorphicButton' span={6} style={{width:"5em", height: "5em"}}><InfoCircleFilled style={{fontSize:"2em", color:"#444444"}}/></Button>
+      <Button className='neumorphicButton' span={6} style={{width:"5em", height: "5em"}}><Calendar2 style={{fontSize:"2em", color:"#444444"}}/></Button>
       </Col>
       </Space> 
         <div className='neumorphic'style={{ margin:"1.5em" , padding :".5em", borderRadius:"15px"}}>  
