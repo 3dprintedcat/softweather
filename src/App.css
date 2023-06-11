@@ -8,17 +8,28 @@
   padding: 20px;
 }
 
-.neumorphic {
+.neumorphicButton {
   background: #f0f0f0 !important;
   border: none !important;
-  box-shadow: 10px 10px 20px #d9d9d9, -10px -10px 20px #ffffff !important;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, .2), -10px -10px 20px #ffffff !important;
 }
+.material {
+  background: #f0f0f0;
+  border: none;
+  margin-bottom: 8px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, .3);
 
-.neumorphic:active {
-  box-shadow: inset 5px 5px 10px #d9d9d9, inset -5px -5px 10px #ffffff !important;
+}
+.neumorphic {
+  background: #f0f0f0;
+  border: none !important;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, .2), -5px -5px 20px #ffffff !important;
+}
+.neumorphicButton:active {
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .2), inset -5px -5px 10px #ffffff !important;
 }
 .neumorphic-inset {
-  background: #f0f0f0 !important;
+  background: #f0f0f0;
   border: none !important;
-  box-shadow: inset 5px 5px 10px #d9d9d9, inset -5px -5px 10px #ffffff !important;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .2), inset -5px -5px 12px #ffffff !important;
 }

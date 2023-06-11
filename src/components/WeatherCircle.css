@@ -1,8 +1,8 @@
 .weather-circle {
     background: #f0f0f0;
     border-radius: 50%; /* make the div circular */
-    width: 200px; /* adjust as needed */
-    height: 200px; /* adjust as needed */
+    width: calc(vh/3); /* adjust as needed */
+    height: calc(vh/3); /* adjust as needed */
     display: flex;
     justify-content: center;
     align-items: center;

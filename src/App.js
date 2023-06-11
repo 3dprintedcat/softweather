@@ -1,16 +1,33 @@
 import React from 'react';
-import { Button, Card } from 'antd';
+import { Button, Card, Col, Row } from 'antd';
 import './App.css'; // assuming you have an App.css file for your custom styles
 import WeatherCircle from './components/WeatherCircle';
+import { BookOutlined, InfoCircleFilled } from '@ant-design/icons';
 
 function App() {
   return (
-    <div className="App">
-      <WeatherCircle/>
-      <Button className="neumorphic">Neumorphic Button</Button>
-      <Card className="neumorphic" title="Neumorphic Card">
-        This is a card with neumorphic design.
-      </Card>
+    <div className="App" style={{overflow:"hidden", height:"100%"}}>
+      <WeatherCircle humidity={30}/>
+      <Row gutter={[50,16]}>
+      <Col>
+      <Button className='neumorphicButton' span={6} style={{width:"5em", height: "5em"}}><InfoCircleFilled style={{fontSize:"2em", color:"#444444"}}/></Button>
+      </Col>
+      <Col>
+      <Button className='neumorphicButton' span={6} style={{width:"5em", height: "5em"}}><BookOutlined style={{fontSize:"2em", color:"#444444"}}/></Button>
+      </Col>
+      <Col>
+      <Button className='neumorphicButton' span={6} style={{width:"5em", height: "5em"}}><InfoCircleFilled style={{fontSize:"2em", color:"#444444"}}/></Button>
+      </Col>
+        </Row>  
+        <div className='neumorphic'style={{ margin:"1.5em" , padding :".5em", borderRadius:"15px"}}>  
+        <Card className='neumorphic-inset' style={{ width:"300px",height:"432px"}}>
+          <Card className='material'>78ºF</Card>
+          <Card className='material'>70ºF</Card>
+          <Card className='material'>72ºF</Card>
+          <Card className='material'>75ºF</Card>
+          <Card className='material'>80ºF</Card>
+          </Card>    
+        </div>
     </div>
   );
 }
