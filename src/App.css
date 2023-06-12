@@ -33,3 +33,8 @@
   border: none !important;
   box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .2), inset -5px -5px 12px #ffffff !important;
 }
+.cutOut {
+  background: #f0f0f0;
+  border: none !important;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .2);
+}

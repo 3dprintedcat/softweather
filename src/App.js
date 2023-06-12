@@ -7,7 +7,7 @@ import { Book, Calendar, Calendar2, Thermometer, ThermometerHalf } from 'react-b
 function App() {
   return (
     <div className="App" style={{overflow:"hidden", height:"100%"}}>
-      <WeatherCircle humidity={30}/>
+      <WeatherCircle humidity={20}/>
       <Space size={'large'}>
       <Col>
       <Button className='neumorphicButton' span={6} style={{width:"5em", height: "5em"}}><ThermometerHalf size={"2em"} color={"#444444"}/></Button>
